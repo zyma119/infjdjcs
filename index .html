@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="ky">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сервер жана маалыматтык системалар</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">  <header class="bg-blue-600 text-white p-4 text-center text-2xl font-bold">
+    Сервер жана анын заманбап ролу
+  </header>  <div class="flex">
+    <!-- Sidebar -->
+    <aside class="w-1/4 bg-white p-4 shadow-md">
+      <button onclick="showSection('intro')" class="block w-full mb-2 bg-blue-500 text-white p-2 rounded">Киришүү</button>
+      <button onclick="showSection('types')" class="block w-full mb-2 bg-blue-500 text-white p-2 rounded">Сервер түрлөрү</button>
+      <button onclick="showSection('tech')" class="block w-full mb-2 bg-blue-500 text-white p-2 rounded">Технология</button>
+      <button onclick="showSection('security')" class="block w-full mb-2 bg-blue-500 text-white p-2 rounded">Коопсуздук</button>
+      <button onclick="showSection('future')" class="block w-full mb-2 bg-blue-500 text-white p-2 rounded">Келечек</button>
+    </aside><!-- Content -->
+<main class="w-3/4 p-6">
+  <section id="intro" class="content-section">
+    <h2 class="text-xl font-bold mb-2">Киришүү</h2>
+    <p>Сервер – бул тармак аркылуу башка түзмөктөргө кызмат көрсөтүүчү негизги технологиялык элемент. Азыркы дүйнөдө бардык санариптик системалар серверлерге таянат.</p>
+  </section>
+
+  <section id="types" class="content-section hidden">
+    <h2 class="text-xl font-bold mb-2">Сервер түрлөрү</h2>
+    <ul class="list-disc ml-5">
+      <li>Веб-сервер</li>
+      <li>Файл сервер</li>
+      <li>Почта сервер</li>
+      <li>Маалымат базасы сервери</li>
+      <li>Оюн сервери</li>
+    </ul>
+  </section>
+
+  <section id="tech" class="content-section hidden">
+    <h2 class="text-xl font-bold mb-2">Технологиялар</h2>
+    <p>Серверлерде күчтүү процессорлор, RAM, SSD дисктер жана виртуалдаштыруу технологиялары колдонулат.</p>
+  </section>
+
+  <section id="security" class="content-section hidden">
+    <h2 class="text-xl font-bold mb-2">Коопсуздук</h2>
+    <p>Серверлерде брандмауэр, шифрлөө, жана көп баскычтуу аутентификация колдонулат.</p>
+  </section>
+
+  <section id="future" class="content-section hidden">
+    <h2 class="text-xl font-bold mb-2">Келечек</h2>
+    <p>Булут технологиялары, жасалма интеллект жана кванттык эсептөөлөр серверлердин келечегин түзөт.</p>
+  </section>
+</main>
+
+  </div>  <script>
+    function showSection(id) {
+      document.querySelectorAll('.content-section').forEach(sec => sec.classList.add('hidden'));
+      document.getElementById(id).classList.remove('hidden');
+    }
+  </script></body>
+</html>
